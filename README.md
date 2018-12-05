@@ -1,3 +1,3 @@
 # Paul Ingram's portfolio
 
-This is my professional portfolio. It uses AWS and ReactJS. I have committed from VS Code, twice now
+This is my professional portfolio. It uses AWS and ReactJS. I have committed from VS Code, three times now
