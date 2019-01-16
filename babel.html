@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Babel Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <label>Name:<input id="name" type="text"/></label>
+        <button id="submit_info">Click me!</button>
+        <div id="content">
+
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <script type="text/babel" data-presets="latest">
+        const getMessage = (name) => `Welcome to Javascript, ${name}!`; const button = document.getElementById('submit_info'); button.addEventListener('click', (evt) => { let name = document.getElementById("name").value; if (name.length
+        < 2) { alert( "you need to enter a name!"); } else { document.getElementById('content').textContent=getMessage(name); } }); </script>
+
+</body>
+
+</html>
