@@ -22,11 +22,13 @@
     "react-test-renderer": "^16.2.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "npm run jest",
+    "test-watch": "jest --watch --env=node --colors --coverage test",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch",
-    "jest": "jest --env=node --colors --coverage test",
-    "test": "npm run jest"
+    "jest": "jest --env=node --colors --coverage test"
+    
+    
   },
   "repository": {
     "type": "git",
